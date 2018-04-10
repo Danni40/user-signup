@@ -50,6 +50,10 @@ def user_form():
     if email != '':
         if '@' not in email and '.' not in email:
             email_error="Please enter a valid email address"
+
+        if '@' not in email or '.' not in email:
+            email_error="Please enter a valid email address"
+
         if ' ' in email:
                 email_error="Email must not contain any spaces"
 
